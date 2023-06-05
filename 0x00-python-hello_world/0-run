@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+
+import os
+
+# Ensure the Python file name is provided as an environment variable
+pyfile = os.getenv("PYFILE")
+if not pyfile:
+    print("Error: PYFILE environment variable is not set.")
+    exit(1)
+
+# Check if the Python file exists
+if not os.path.isfile(pyfile):
+    print(f"Error: Python file '{pyfile}' does not exist.")
+    exit(1)
+
+# Run the Python script
+exec(compile(open(pyfile).read(), pyfile, 'exec'))

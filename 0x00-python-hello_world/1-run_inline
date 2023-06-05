@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+
+import os
+
+# Ensure the Python code is provided as an environment variable
+pycode = os.getenv('PYCODE')
+if not pycode:
+    print("Error: PYCODE environment variable is not set.")
+    exit(1)
+
+# Execute the Python code
+exec(pycode)

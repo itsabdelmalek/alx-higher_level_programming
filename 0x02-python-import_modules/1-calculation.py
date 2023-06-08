@@ -1,15 +1,22 @@
 #!/usr/bin/python3
 
 """
-This program imports the function `add` from the file `add_0.py`
-and prints the result of the addition 1 + 2 = 3.
+This program imports functions from the file `calculator_1.py`, performs some calculations,
+and prints the result.
 """
 
 if __name__ == "__main__":
-    a = 1
-    b = 2
+    a = 10
+    b = 5
 
-    from add_0 import add
+    import calculator_1
 
-    result = add(a, b)
-    print("{} + {} = {}".format(a, b, result))
+    result_sum = calculator_1.add(a, b)
+    result_diff = calculator_1.subtract(a, b)
+    result_mul = calculator_1.multiply(a, b)
+    result_div = calculator_1.divide(a, b)
+
+    print("The sum of {} and {} is: {}".format(a, b, result_sum))
+    print("The difference between {} and {} is: {}".format(a, b, result_diff))
+    print("The product of {} and {} is: {}".format(a, b, result_mul))
+    print("The division of {} by {} is: {}".format(a, b, result_div))

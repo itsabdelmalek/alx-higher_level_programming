@@ -7,6 +7,7 @@ def no_c(my_string):
             new_string += char
     return new_string
 
+
 if __name__ == "__main__":
     # Example usage
     string = "Hello, World! This is a test string."

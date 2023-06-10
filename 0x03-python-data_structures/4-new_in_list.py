@@ -7,6 +7,7 @@ def new_in_list(my_list, idx, element):
     new_list[idx] = element
     return new_list
 
+
 if __name__ == "__main__":
     # Example usage
     lst = [1, 2, 3, 4, 5]

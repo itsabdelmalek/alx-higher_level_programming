@@ -3,10 +3,5 @@
 def print_matrix_integer(matrix=[[]]):
     for row in matrix:
         for num in row:
-            print("{:d}".format(num), end=" ")
+            print("{:d}".format(num), end=" " if num != row[-1] else "")
         print()
-
-if __name__ == "__main__":
-    # Example usage
-    matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    print_matrix_integer(matrix)

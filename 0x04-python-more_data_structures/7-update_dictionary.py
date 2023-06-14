@@ -6,3 +6,4 @@ def update_dictionary(a_dictionary, key, value):
     """
     # Update the value of the key if it exists, or add a new key/value pair
     a_dictionary[key] = value
+    return (a_dictionary)

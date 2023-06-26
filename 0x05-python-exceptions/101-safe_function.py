@@ -4,7 +4,6 @@ import sys
 
 
 def safe_function(fct, *args):
-    # pycodestyle will check for code style conformity
 
     try:
         result = fct(*args)

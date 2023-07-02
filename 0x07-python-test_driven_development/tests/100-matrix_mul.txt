@@ -1,0 +1,48 @@
+*****************************************************
+**  Test Cases for matrix_mul Function  **
+*****************************************************
+
+- test_matrix_mul:
+  - Description: Tests the matrix_mul function with valid input.
+  - Steps:
+    1. Create two matrices, m1 and m2, with valid dimensions and values.
+    2. Call the matrix_mul function with m1 and m2.
+    3. Verify the result of the matrix multiplication.
+  - Expected Output: The function should return the matrix multiplication result.
+
+- test_matrix_mul_invalid_dimensions:
+  - Description: Tests the matrix_mul function with matrices of mismatched dimensions.
+  - Steps:
+    1. Create two matrices, m3 and m4, with different dimensions.
+    2. Call the matrix_mul function with m3 and m4.
+    3. Verify that a ValueError exception is raised.
+  - Expected Output: The function should raise a ValueError due to incompatible matrix dimensions.
+
+- test_matrix_mul_invalid_elements:
+  - Description: Tests the matrix_mul function with matrices containing non-numeric elements.
+  - Steps:
+    1. Create two matrices, m5 and m6, with non-numeric elements.
+    2. Call the matrix_mul function with m5 and m6.
+    3. Verify that a TypeError exception is raised.
+  - Expected Output: The function should raise a TypeError due to non-numeric elements in the matrices.
+
+- test_matrix_mul_empty_matrices:
+  - Description: Tests the matrix_mul function with empty matrices.
+  - Steps:
+    1. Create two empty matrices, m7 and m8.
+    2. Call the matrix_mul function with m7 and m8.
+    3. Verify that a ValueError exception is raised.
+  - Expected Output: The function should raise a ValueError due to empty matrices.
+
+- test_matrix_mul_not_matrices:
+  - Description: Tests the matrix_mul function with non-matrix input.
+  - Steps:
+    1. Create two non-matrix inputs, m9 and m10.
+    2. Call the matrix_mul function with m9 and m10.
+    3. Verify that a TypeError exception is raised.
+  - Expected Output: The function should raise a TypeError due to non-matrix input.
+
+You can execute this test file using the command `python3 -m unittest tests.matrix_mul_test`.
+
+*****************************************************
+

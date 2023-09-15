@@ -17,7 +17,10 @@ class State(Base):
     Represents a state in the states table.
     """
 
-    __tablename__ = "cities"
-    id = Column(Integer, primary_key=True)
+    __tablename__ = 'states'
+
+    id = Column(Integer, primary_key=True, nullable=False, unique=True)
     name = Column(String(128), nullable=False)
-    state_id = Column(Integer, ForeignKey("states.id"), nullable=False)
+
+    def __repr__(self):
+        return f"<State(id={self.id}, name='{self.name}')>"
